@@ -1,39 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Chinmay Thosar</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+---
+layout: default
+---
 
-.header {
-        padding: 40px; /* some padding */
-        text-align: center; /* center the text */
-        background: rgb(0, 0, 0); /* green background */
-        color: white; /* white text color */
-      }
-    
-      /* Increase the font size of the <h1> element */
-.header h1 {
-        font-size: 30px;
-    }
-</style>
-</head>
-<body>
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
 
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-<div class="header">
-    <h1>Chinmay Thosar</h1>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
 
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
 </div>
-
-
-
-
-</body>
-</html>
-
-
