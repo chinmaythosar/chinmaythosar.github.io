@@ -1,18 +1,20 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chinmay Thosar</title>
+</head>
+<body>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<h1>Chinmay Thosar.</h1>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<h2>Projects:</h2>
+<p>PrivateDNS: An opensource DNS encryption app for iOS.<br/>
+<a href="https://github.com/chinmaythosar/PrivateDNS">Source</a>
+<a href="https://apps.apple.com/app/privatedns/id1547063327">App Store</a>
+</p>
+<p>FingerPrint Image Segmentation: An Unsupervised Learning script to segment fingerprints from NIST database.<br/>
+<a href="https://github.com/chinmaythosar/FingerPrintImageSegmentation">Source</a>
+</p>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+</body>
+</html>
